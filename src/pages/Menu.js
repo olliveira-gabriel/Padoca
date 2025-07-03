@@ -2,19 +2,24 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import LogoCabecalho from  "../img/logo led.png";
 import { Link } from "react-router-dom";
 
 function Menu() {
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Logo</Navbar.Brand>
+      <Navbar className='cabecalho'>
+        <Container className='container'>
+          <Navbar.Brand href="#home">
+            <Link to='/'><img className='Logo' src={LogoCabecalho} alt='Logo Padaria'/></Link>
+          </Navbar.Brand>
+          <div className='links'>
+            <Nav.Link className='menu'><Link to='/'>Home</Link></Nav.Link>
+            <Nav.Link className='menu'><Link to='/'>Cardápio</Link></Nav.Link>
+            <Nav.Link className='menu'><Link to='/'>Unidade</Link></Nav.Link>
+          </div>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Cardápio</Nav.Link>
-            <Nav.Link href="#pricing">unidades</Nav.Link>
-            <Nav.Link href="C">carrinho</Nav.Link>
+          <Nav.Link className='menu'><Link to='/'><i class="bi bi-cart fs-1 "></i></Link></Nav.Link>
           </Nav>
         </Container>
       </Navbar>
