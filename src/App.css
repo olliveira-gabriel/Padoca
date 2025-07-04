@@ -10,5 +10,16 @@
   text-decoration: none;
 }
 .favoritos{
-  margin-top: 10%;
+  margin-top: 40%;
+}
+.btn-add-carrinho{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-Top: 1px solid black;
+  width: 100%;
+}
+.card-home{
+  margin-top: 20%;
+  border: none;
+
 }

@@ -1,19 +1,17 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import ImgPaoQueijo from '../img/MiniPaoQ.png'
 
-function CardsHome() {
+function CardsHome(props) {
     return (
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
+        <Card className='card-home' style={{ width: '15rem' }}>
+          <Card.Img variant="top" src={props.ImgProduto} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>{props.TituloProduto}</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              {props.PrecoProduto}
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <button className='btn-add-carrinho' variant="primary">Adicionar ao carrinho <i className="bi bi-cart fs-4 text-warning"></i></button>
           </Card.Body>
         </Card>
       );

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function Menu() {
   return (
-    <Navbar expand="lg" className="cabecalho px-3" variant="dark">
+    <Navbar expand="lg" className="cabecalho px-3">
       <Container>
         <Navbar.Brand>
           <Link to='/'><img className='Logo' src={LogoCabecalho} alt='Logo Padaria'/></Link>
