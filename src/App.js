@@ -5,6 +5,7 @@ import Menu from "./pages/Menu.js";
 import Cardapio from "./pages/Cardapio.js";
 import Unidade from "./pages/Unidade.js";
 import Carrinho from "./pages/Carrinho.js";
+import Rodapé from "./components/Rodapé.js";
 import './App.css';
 
 
@@ -18,7 +19,9 @@ function App() {
             <Route path="/unidades" element={<Unidade/>} />
             <Route path="/carrinho" element={<Carrinho/>} />
         </Routes>
+        <Rodapé/>
     </Router>
+
   );
 }
 

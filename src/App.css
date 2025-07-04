@@ -23,3 +23,57 @@
   border: none;
 
 }
+.star-icon {
+  color: gold;
+}
+.txt-avalicao{
+  margin-top: 5%;
+  text-align: center;
+}
+.carrossel-container {
+  background-color: #A44A3F;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  margin: 3rem auto;
+  max-width: 80%;
+}
+
+.avaliacao-card {
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 5rem;
+  margin: 1rem 5;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  height: 100%;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.estrelas {
+  color: gold;
+  font-size: 1.2rem;
+}
+.footer {
+  background-color: #A44A3F;
+  color: #F1C40F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-item {
+  flex: 1;
+  text-align: center;
+}
+
