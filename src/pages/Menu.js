@@ -1,29 +1,33 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import LogoCabecalho from  "../img/logo led.png";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { Link } from "react-router-dom";
 
 function Menu() {
   return (
-    <div>
-      <Navbar className='cabecalho'>
-        <Container className='container'>
-          <Navbar.Brand href="#home">
-            <Link to='/'><img className='Logo' src={LogoCabecalho} alt='Logo Padaria'/></Link>
-          </Navbar.Brand>
-          <div className='links'>
-            <Nav.Link className='menu'><Link to='/'>Home</Link></Nav.Link>
-            <Nav.Link className='menu'><Link to='/'>Cardápio</Link></Nav.Link>
-            <Nav.Link className='menu'><Link to='/'>Unidade</Link></Nav.Link>
-          </div>
-          <Nav className="me-auto">
-          <Nav.Link className='menu'><Link to='/'><i class="bi bi-cart fs-1 "></i></Link></Nav.Link>
+    <Navbar expand="lg" className="cabecalho px-3" variant="dark">
+      <Container>
+        <Navbar.Brand>
+          <Link to='/'><img className='Logo' src={LogoCabecalho} alt='Logo Padaria'/></Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="menu-navbar" />
+        <Navbar.Collapse id="menu-navbar">
+          <Nav className="ms-auto align-items-center gap-3">
+            <Nav.Link className="menu-link" as={Link} to='/'>Home</Nav.Link>
+            <Nav.Link className="menu-link" as={Link} to='/cardapio'>Cardápio</Nav.Link>
+            <Nav.Link className="menu-link" as={Link} to='/unidade'>Unidade</Nav.Link>
+            <Nav.Link className="menu-link" as={Link} to='/carrinho'>
+              <i className="bi bi-cart fs-3 text-warning"></i>
+            </Nav.Link>
           </Nav>
-        </Container>
-      </Navbar>
-    </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

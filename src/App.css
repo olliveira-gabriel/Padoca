@@ -3,18 +3,9 @@
 }
 .cabecalho{
   background-color: #A44A3F;
-  display: flex;
-  
-  align-items: center;
 }
-.container{
-  gap: 400px;
-}
-.links{
-  display: flex;
-  gap: 50px;
-}
-.menu a {
+
+.menu-link{
   color: #E6AF2E;
   text-decoration: none;
 }
