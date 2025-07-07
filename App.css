@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.Logo{
+  height: 100px;
+}
+.cabecalho{
+  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  background-color: #A44A3F;
+}
+
+.menu-link{
+  color: #E6AF2E;
+  text-decoration: none;
+}
+.favoritos{
+  margin-top: 40%;
+}
+.btn-add-carrinho{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-Top: 1px solid black;
+  width: 100%;
+}
+.card-home{
+  margin-top: 20%;
+  border: none;
+}
+.Text-Card{
+  font-family: 'Playfair Display', serif;
+}
+.Text-preco{
+  font-weight: bold;
+}
+
+.star-icon {
+  color: gold;
+}
+.txt-avalicao{
+  font-family: 'Playfair Display', serif;
+  margin-top: 5%;
+  text-align: center;
+}
+.carrossel-container {
+  background-color: #A44A3F;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  margin: 3rem auto;
+  max-width: 80%;
+}
+
+.avaliacao-card {
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 5rem;
+  margin: 1rem 5;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  height: 100%;
+}
+.mt-2{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+.Texto-avaliacao{
+  font-family: 'Playfair Display', serif;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.estrelas {
+  color: gold;
+  font-size: 1.2rem;
+}
+.footer {
+  background-color: #A44A3F;
+  color: #F1C40F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-item {
+  flex: 1;
+  text-align: center;
+}
+.linha-cards{
+  margin-left: 5%;
+}
+
+.nome-loc{
+  font-family: 'Playfair Display', serif;
+}
