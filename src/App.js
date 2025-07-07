@@ -1,4 +1,4 @@
-import Home from "./pages/Home";
+import Home from "./pages/Home.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Menu from "./pages/Menu.js";

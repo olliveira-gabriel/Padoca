@@ -1,7 +1,7 @@
 
 import Banner from '../components/Banner.js'
-import Favoristos from '../components/Favoristos'
-import CarrosselAvaliacao from '../components/CarrosselAvaliacao'
+import Favoristos from '../components/Favoristos.js'
+import CarrosselAvaliacao from '../components/CarrosselAvaliacao.js'
 import BannerHolme from "../img/banner home.png"
 
 function Home() {
