@@ -8,7 +8,7 @@ import "./Carrinho.css";
 function Carrinho() {
   const { cart } = useContext(CartContext);
   
-  const total = cart.reduce((acc, item) => acc + item.preco * item.quantity, 0);
+  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
     <Container fluid className="carrinho-container">

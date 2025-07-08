@@ -12,17 +12,12 @@ function ItemCarrinho({ item }) {
       <Row className="align-items-center">
         <Col xs={2}>
           <div className="item-image-container">
-            <Image 
-              src={item.imagem} 
-              alt={item.nome} 
-              className="item-image-small"
-              fluid 
-            />
+            <Image src={item.image}  alt={item.name} className="item-image-small" fluid />
           </div>
         </Col>
         <Col xs={6}>
           <div className="item-details-simple">
-            <div className="item-name-simple">{item.nome}</div>
+            <div className="item-name-simple">{item.name}</div>
             <div className="item-quantity-controls">
               <Button 
                 variant="outline-secondary" 
@@ -46,7 +41,7 @@ function ItemCarrinho({ item }) {
         </Col>
         <Col xs={3} className="text-end">
           <div className="item-price-simple">
-            R$ {(item.preco * item.quantity).toFixed(2)}
+            R$ {(item.price * item.quantity).toFixed(2)}
           </div>
         </Col>
         <Col xs={1} className="text-end">
