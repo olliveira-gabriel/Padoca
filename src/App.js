@@ -6,22 +6,24 @@ import Cardapio from "./pages/Cardapio.js";
 import Unidades from "./pages/Unidades.js";
 import Carrinho from "./pages/Carrinho.js";
 import Rodapé from "./components/Rodapé.js";
+import { CartProvider } from './context/CartContext';
 import './App.css';
 
 
 function App() {
   return (
-    <Router>
-        <Menu/>
+    <CartProvider>
+      <Router>
+        <Menu />
         <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/cardapio" element={<Cardapio/>} />
-            <Route path="/unidades" element={<Unidades/>} />
-            <Route path="/carrinho" element={<Carrinho/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/cardapio" element={<Cardapio />} />
+          <Route path="/unidades" element={<Unidades />} />
+          <Route path="/carrinho" element={<Carrinho />} />
         </Routes>
-        <Rodapé/>
-    </Router>
-
+        <Rodapé />
+      </Router>
+    </CartProvider>
   );
 }
 

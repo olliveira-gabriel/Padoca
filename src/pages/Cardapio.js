@@ -12,24 +12,76 @@ import ImgPco from '../img/PaoComOvo.png'
 import ImgOvo from '../img/Ovomexido.png'
 
 function Cardapio() {
+  const produtos = [
+    {
+      id: 1,
+      nome: "Bolo de Chocolate Branco",
+      preco: 25,
+      imagem: ImgBolo,
+    },
+    {
+      id: 2,
+      nome: "Mini Pão de Queijo com Requeijão",
+      preco: 20,
+      imagem: ImgPaoQueijo,
+    },
+    {
+      id: 3,
+      nome: "Sanduba Queijo e Presunto",
+      preco: 17,
+      imagem: ImgSanduba,
+    },
+    {
+      id: 4,
+      nome: "Coxinha com Frango com Requeijão",
+      preco: 16,
+      imagem: ImgCoxinha,
+    },
+    {
+      id: 5,
+      nome: "Pão com Ovo e Peito de Peru",
+      preco: 25,
+      imagem: ImgPco,
+    },
+    {
+      id: 6,
+      nome: "Ovos Mexidos Com Queijo Prato e Requeijão",
+      preco: 29,
+      imagem: ImgOvo,
+    },
+  ];
+
   return (
     <div>
-        <Banner Banner={BannerCarapio} />
-        <Container>
-          <Row className='linha-cards' >
-            <Col  xs={12} md={6} lg={4} ><CardsCardapio ImgProduto={ImgBolo} TituloProduto="Bolo de Chocolate Branco" PrecoProduto="R$25" /></Col>
-            <Col xs={12} md={6} lg={4}><CardsCardapio ImgProduto={ImgPaoQueijo} TituloProduto="Mini Pão de Queijo com Requeijão" PrecoProduto="R$20"/></Col>
-            <Col  xs={12} md={6} lg={4}><CardsCardapio ImgProduto={ImgSanduba} TituloProduto="Sanduba Queijo e Presunto" PrecoProduto="R$17" /></Col>
-          </Row>
-          <Row className='linha-cards'>
-            <Col  xs={12} md={6} lg={4}><CardsCardapio ImgProduto={ImgCoxinha} TituloProduto="Coxinha com Frango com Requeijão" PrecoProduto="R$16" /></Col>
-            <Col  xs={12} md={6} lg={4}><CardsCardapio ImgProduto={ImgPco} TituloProduto="Pão com Ovo e Peito de Peru" PrecoProduto="R$25" /></Col>
-            <Col  xs={12} md={6} lg={4}><CardsCardapio ImgProduto={ImgOvo} TituloProduto="Ovos Mexidos Com Queijo Prato e Requeijão" PrecoProduto="R$29" /></Col>
-          </Row>
-        </Container>
+      <Banner Banner={BannerCarapio} />
+      <Container>
+        <Row className='linha-cards'>
+          {produtos.slice(0, 3).map(produto => (
+            <Col key={produto.id} xs={12} md={6} lg={4}>
+              <CardsCardapio
+                id={produto.id}
+                TituloProduto={produto.nome}
+                PrecoProduto={produto.preco}
+                ImgProduto={produto.imagem}
+              />
+            </Col>
+          ))}
+        </Row>
+        <Row className='linha-cards'>
+          {produtos.slice(3).map(produto => (
+            <Col key={produto.id} xs={12} md={6} lg={4}>
+              <CardsCardapio
+                id={produto.id}
+                TituloProduto={produto.nome}
+                PrecoProduto={produto.preco}
+                ImgProduto={produto.imagem}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
-  )
+  );
 }
 
-export default Cardapio
-
+export default Cardapio;
