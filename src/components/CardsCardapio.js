@@ -7,9 +7,9 @@ function CardsCardapio({ ImgProduto, TituloProduto, PrecoProduto, id }) {
 
   const produto = {
     id,
-    nome: TituloProduto,
-    preco: PrecoProduto,
-    imagem: ImgProduto,
+    name: TituloProduto,
+    price: PrecoProduto,
+    image: ImgProduto,
   };
 
   return (
