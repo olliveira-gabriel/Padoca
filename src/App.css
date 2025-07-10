@@ -104,3 +104,12 @@
 .nome-loc{
   font-family: 'Playfair Display', serif;
 }
+.img-sobre {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.Sobre-nos{
+  padding-top: 5%;
+}

@@ -19,6 +19,8 @@ function Menu() {
             <Nav.Link className="menu-link" as={Link} to='/'>Home</Nav.Link>
             <Nav.Link className="menu-link" as={Link} to='/cardapio'>Cardápio</Nav.Link>
             <Nav.Link className="menu-link" as={Link} to='/unidades'>Unidades</Nav.Link>
+            <Nav.Link className="menu-link" as={Link} to='/sobrenos'>Sobre Nós</Nav.Link>
+            <Nav.Link className="menu-link" as={Link} to='/parceiros'>Parceiros</Nav.Link>
             <Nav.Link className="menu-link" as={Link} to='/carrinho'>
               <i className="bi bi-cart fs-3 text-warning"></i>
             </Nav.Link>
