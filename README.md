@@ -4,9 +4,8 @@
 Sistema completo da Padoca 011 com frontend React e backend Node.js, incluindo formulário de carrinho conectado ao banco de dados PostgreSQL e painel de administração para gerenciar dados dos clientes.
 
 ## Integrantes
-- [Nome do Integrante 1]
-- [Nome do Integrante 2]
-- [Nome do Integrante 3]
+- https://github.com/olliveira-gabriel
+- https://github.com/jeff0proprio
 
 ## Funcionalidades Implementadas
 
